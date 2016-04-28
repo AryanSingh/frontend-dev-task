@@ -10,7 +10,7 @@
     <flash-message duration="5000" show-close="true" on-dismiss=""></flash-message >
     <div class="msg-box" ng-class="{read: message.isRead, unread:!message.isRead}" ng-repeat="message in vm.messages" class="item">
       
-        <h3 class=""><span><ng-md-icon ng-click="vm.toggleStar(message.id)" icon="star" style="fill:" size="18" ng-if="message.isStarred"></ng-md-icon><ng-md-icon ng-click="vm.toggleStar(message.id)" icon="star_border" style="fill:" size="18" ng-if="!message.isStarred"></ng-md-icon></span>  <a ng-click="vm.toggleRead(message.id)" href="#/messages/{{message.id}}">{{message.subject}}</a></h3><ng-md-icon ng-click="vm.messageDelete(message.id)" icon="delete"  style="float: right;position: relative;top: -20px;fill:#c60505" size="24"></ng-md-icon>
+        <h3 class=""><span><ng-md-icon ng-click="vm.toggleStar(message.id)" icon="star" style="fill:#E1BA53" size="18" ng-if="message.isStarred"></ng-md-icon><ng-md-icon ng-click="vm.toggleStar(message.id)" icon="star_border" style="fill:" size="18" ng-if="!message.isStarred"></ng-md-icon></span>  <a ng-click="vm.toggleRead(message.id)" href="#/messages/{{message.id}}">{{message.subject}}</a></h3><ng-md-icon ng-click="vm.messageDelete(message.id)" icon="delete"  style="float: right;position: relative;top: -20px;fill:#c60505" size="24"></ng-md-icon>
         <p class="">{{message.preview}}</p>
     </div>
   </div>
