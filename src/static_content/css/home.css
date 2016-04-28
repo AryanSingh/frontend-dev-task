@@ -1,5 +1,5 @@
 .msg-container{
-  margin-top: 10vmin;
+  margin-top: 0;
 }
 
 a{
@@ -7,13 +7,17 @@ a{
   /*color: black;*/
 }
 
-/*.center{
+.center{
   text-align: center;
-}*/
+}
 
 .msg-box{
   background: #E6E6E7;
   padding: 15px 20px;
   margin: 2vmin 0;
+}
+
+.msg-detail{
+  margin-top: 10vmin;
 }
 

@@ -1,10 +1,17 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="center">
+      <h2>All Messages</h2>
+    </div>
+  </div>
+</nav>
 <div class="container row" class="message" ng-controller="MessageCtrl as vm">
   <div class="col-lg-10 col-lg-offset-1">
     <flash-message duration="5000" show-close="true" on-dismiss=""></flash-message >
     <div class="msg-box" ng-repeat="message in vm.messages" class="item">
       <a href="#/messages/{{message.id}}">
-        <h3 class="center"><span><ng-md-icon icon="star" style="fill:" size="18" ng-if="message.isStarred"></ng-md-icon><ng-md-icon icon="star_border" style="fill:" size="18" ng-if="!message.isStarred"></ng-md-icon></span>  {{message.subject}}</h3>
-        <p class="center">{{message.preview}}</p>
+        <h3 class=""><span><ng-md-icon icon="star" style="fill:" size="18" ng-if="message.isStarred"></ng-md-icon><ng-md-icon icon="star_border" style="fill:" size="18" ng-if="!message.isStarred"></ng-md-icon></span>  {{message.subject}}</h3>
+        <p class="">{{message.preview}}</p>
       </a>
     </div>
   </div>
