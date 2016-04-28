@@ -1,6 +1,9 @@
 .msg-container{
   margin-top: 0;
 }
+.navbar{
+  background: #E6E6E7;
+}
 
 a{
   text-decoration: none !important;
@@ -12,12 +15,17 @@ a{
 }
 
 .msg-box{
-  background: #E6E6E7;
+  /*F8F8F8*/
+  background: #F8F8F8;
   padding: 15px 20px;
   margin: 2vmin 0;
 }
 
 .msg-detail{
   margin-top: 10vmin;
+}
+
+.message{
+  padding:0;
 }
 

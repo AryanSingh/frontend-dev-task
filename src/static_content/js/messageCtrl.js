@@ -16,5 +16,25 @@
         vm.messages = data;
       })
     }
+    vm.toggleStar = function(id){
+      messageApi.getMessageData(id).then(function(data){
+        data.isStarred = !data.isStarred;
+        // console.log('star toggled');
+        // console.log(data.isStarred);
+        // messageApi.getMessages().then(function(data){
+        //   vm.messages = data;
+        // })
+      })
+    }
+
+    vm.toggleRead =function(id){
+      messageApi.getMessageData(id).then(function(data){
+        data.isRead = !data.isRead;
+        // console.log('Read toggled');
+        // messageApi.getMessages().then(function(data){
+        //   vm.messages = data;
+        // })
+      })
+    }
   };
 })();
