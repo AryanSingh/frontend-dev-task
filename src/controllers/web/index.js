@@ -7,10 +7,10 @@ module.exports = function (router) {
 
     router.get('/', function (req, res, next) {
         // For some reason, you don't want to use jade, this is how you can use your own HTML.
-        //res.sendFile(_getViewPath('index_htm.html'));
-        //return;
+        res.sendFile(path.join(__dirname + '../../../static_content/index_htm.html'));
+        return;
 
-        res.render('index', {title: 'Front-End Challenge'});
+        // res.render('index', {title: 'Front-End Challenge'});
     });
 
     /**

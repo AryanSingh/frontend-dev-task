@@ -1,1 +1,21 @@
-<!DOCTYPE html><html><head><title></title><link rel="stylesheet" href="/static/css/home.css"><script type="text/javascript" src="/static/js/home.js"></script></head><body class="light-primary-color"><h1>Good Luck!</h1></body></html>
+<!DOCTYPE html >
+<html ng-app="devApp">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/home.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+  <script src="/static/js/app.js"></script>
+  <script src="/static/js/messageService.js"></script>
+  <script src="/static/js/messageCtrl.js"></script>
+  <script src="/static/js/message-detailCtrl.js"></script>
+  <!-- <script src="/static/js/home.js"></script> -->
+</head>
+<body class="container"  ng-controller="messageCtrl as vm">
+  <div class="jumbotron">
+    <ng-view></ng-view>
+  </div>
+</body>
+</html>

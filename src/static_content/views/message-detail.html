@@ -1,0 +1,12 @@
+<section class="container" ng-controller="MessageDetailCtrl as vm">
+  <div>
+      <h2><b>Subject</b> : {{vm.message.subject}}</h2>
+      <h3>{{vm.message.participants[0].name}} | {{vm.message.participants[0].email}}</h3>
+      <hr>
+      <!-- <p>{{vm.message.preview}}</p> -->
+      <p>{{vm.message.body}}</p>
+    
+    <span><button class="btn btn-danger" ng-click="vm.MessageDelete(vm.message.id)">Delete</button> <button class="btn"><a href="/#/messages">Back</a></button></span>
+
+  </div>
+<section>

@@ -1,0 +1,29 @@
+<!DOCTYPE html >
+<html ng-app="devApp">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/home.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.7.0/angular-material-icons.min.js"></script> 
+  <script src="/static/js/app.js"></script>
+  <script src="/static/js/messageService.js"></script>
+  <script src="/static/js/messageCtrl.js"></script>
+  <script src="/static/js/message-detailCtrl.js"></script>
+  <script src="/bower/angular-flash/angular-flash.js"></script>
+  <link type="text/css" rel="stylesheet" href="dist/angular-flash.min.css" />
+
+  <script src="/bower/angular-flash-alert/dist/angular-flash.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+  <!-- <script src="/static/js/home.js"></script> -->
+</head>
+<body class="container" ng-controller="MessageCtrl as vm">
+  <div class="msg-container container">
+    
+    <ng-view></ng-view>
+  </div>
+</body>
+</html>

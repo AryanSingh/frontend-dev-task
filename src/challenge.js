@@ -34,8 +34,8 @@
         self._app.use(morgan(self._getAccessLogFormat(), {stream: accessLogStream}));
 
         // Setup template engine & view renderer
-        self._app.set('views', __dirname + '/views/web');
-        self._app.set('view engine', 'jade');
+        // self._app.set('views', __dirname + '/views/web');
+        // self._app.set('view engine', 'jade');
 
         self._app.use(expressDomainMiddleware); // domains middleware will attach a domain to each request
         self._app.use(bodyParser.json()); // read json input in post

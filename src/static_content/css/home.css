@@ -1,0 +1,19 @@
+.msg-container{
+  margin-top: 10vmin;
+}
+
+a{
+  text-decoration: none !important;
+  /*color: black;*/
+}
+
+/*.center{
+  text-align: center;
+}*/
+
+.msg-box{
+  background: #E6E6E7;
+  padding: 15px 20px;
+  margin: 2vmin 0;
+}
+
