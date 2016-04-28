@@ -10,7 +10,7 @@
     <flash-message duration="5000" show-close="true" on-dismiss=""></flash-message >
     <div class="msg-box" ng-repeat="message in vm.messages" class="item">
       <a href="#/messages/{{message.id}}">
-        <h3 class=""><span><ng-md-icon icon="star" style="fill:" size="18" ng-if="message.isStarred"></ng-md-icon><ng-md-icon icon="star_border" style="fill:" size="18" ng-if="!message.isStarred"></ng-md-icon></span>  {{message.subject}}</h3></a><ng-md-icon ng-click="vm.messageDelete(message.id)" icon="delete"  style="float: right;" size="24"></ng-md-icon>
+        <h3 class=""><span><ng-md-icon icon="star" style="fill:" size="18" ng-if="message.isStarred"></ng-md-icon><ng-md-icon icon="star_border" style="fill:" size="18" ng-if="!message.isStarred"></ng-md-icon></span>  {{message.subject}}</h3></a><ng-md-icon ng-click="vm.messageDelete(message.id)" icon="delete"  style="float: right;position: relative;top: -20px" size="24"></ng-md-icon>
         <p class="">{{message.preview}}</p>
     </div>
   </div>
